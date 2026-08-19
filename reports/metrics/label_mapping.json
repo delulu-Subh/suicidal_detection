@@ -1,0 +1,31 @@
+{
+  "internal_mapping": {
+    "LOW": 0,
+    "MEDIUM": 1,
+    "HIGH": 2
+  },
+  "source_mappings": {
+    "Combined Data.csv": {
+      "Normal": "LOW",
+      "Anxiety": "MEDIUM",
+      "Stress": "MEDIUM",
+      "Depression": "MEDIUM",
+      "Bipolar": "MEDIUM",
+      "Personality disorder": "MEDIUM",
+      "Suicidal": "HIGH"
+    },
+    "reddit_depression_suicidewatch.csv": {
+      "depression": "MEDIUM",
+      "SuicideWatch": "HIGH"
+    },
+    "Relabelled_Cleaned_Dataset.csv": {
+      "0": "LOW",
+      "1": "MEDIUM",
+      "2": "HIGH"
+    },
+    "Suicide_Detection.csv": {
+      "non-suicide": "LOW",
+      "suicide": "HIGH"
+    }
+  }
+}

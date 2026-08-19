@@ -1,0 +1,45 @@
+{
+  "note": "feature contributions, not evidence of intent",
+  "features": [
+    {
+      "feature": "and",
+      "weight": 0.02970615787220407
+    },
+    {
+      "feature": "making",
+      "weight": -0.019953100463663536
+    },
+    {
+      "feature": "things",
+      "weight": -0.014148440815785594
+    },
+    {
+      "feature": "re",
+      "weight": -0.011442720030153335
+    },
+    {
+      "feature": "hot",
+      "weight": 0.00870487378055196
+    },
+    {
+      "feature": "you",
+      "weight": 0.008336186056983014
+    },
+    {
+      "feature": "are",
+      "weight": 0.00808765838014929
+    },
+    {
+      "feature": "texas",
+      "weight": -0.0061882143109053805
+    },
+    {
+      "feature": "weather",
+      "weight": 0.004865924665302329
+    },
+    {
+      "feature": "cuz",
+      "weight": 0.0024846281570503753
+    }
+  ]
+}

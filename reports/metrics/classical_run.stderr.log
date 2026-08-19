@@ -1,0 +1,6 @@
+C:\Users\Subham Dey\suicidal_detection\.venv\Lib\site-packages\sklearn\feature_extraction\text.py:2049: UserWarning: Only (<class 'numpy.float64'>, <class 'numpy.float32'>, <class 'numpy.float16'>) 'dtype' should be used. float32 'dtype' will be converted to np.float64.
+  warnings.warn(
+C:\Users\Subham Dey\suicidal_detection\.venv\Lib\site-packages\sklearn\feature_extraction\text.py:2049: UserWarning: Only (<class 'numpy.float64'>, <class 'numpy.float32'>, <class 'numpy.float16'>) 'dtype' should be used. float32 'dtype' will be converted to np.float64.
+  warnings.warn(
+C:\Users\Subham Dey\suicidal_detection\.venv\Lib\site-packages\sklearn\feature_extraction\text.py:2049: UserWarning: Only (<class 'numpy.float64'>, <class 'numpy.float32'>, <class 'numpy.float16'>) 'dtype' should be used. float32 'dtype' will be converted to np.float64.
+  warnings.warn(

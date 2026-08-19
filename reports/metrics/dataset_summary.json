@@ -1,0 +1,14 @@
+{
+  "records_after_normalization": 300643,
+  "class_counts": {
+    "LOW": 132158,
+    "HIGH": 127292,
+    "MEDIUM": 41193
+  },
+  "missing_text": 0,
+  "duplicate_text_label_removed": "yes, before splitting",
+  "text_column": "text",
+  "target_column": "risk_label",
+  "behavioral_features": "Not used: compatible normalized sources do not include user/activity metadata. The Twitter source is excluded because local labels 0/1 lack documented risk semantics.",
+  "split_policy": "stratified 70/15/15; group-aware only when a complete user_id column is present."
+}

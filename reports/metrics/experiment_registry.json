@@ -1,0 +1,168 @@
+[
+  {
+    "experiment": "linear_svm_full_baseline_revalidated",
+    "dataset_size": {
+      "train": 210451,
+      "validation": 45096,
+      "test": 45097
+    },
+    "features": "word TF-IDF (up to 50k) + six affective features",
+    "model": "Calibrated Linear SVM, balanced class weighting",
+    "training_configuration": "existing full-data artifact; no tuning on test",
+    "evaluation_split": "full held-out test",
+    "metrics": {
+      "accuracy": 0.8415637403818436,
+      "precision": 0.829215302875931,
+      "recall": 0.8415637403818436,
+      "f1": 0.8295427136250653,
+      "macro_precision": 0.7872240577091772,
+      "macro_recall": 0.7344895884533552,
+      "macro_f1": 0.7479803174566766,
+      "weighted_precision": 0.829215302875931,
+      "weighted_recall": 0.8415637403818436,
+      "weighted_f1": 0.8295427136250653,
+      "per_class": {
+        "0": {
+          "precision": 0.8825417807572468,
+          "recall": 0.942998385794996,
+          "f1-score": 0.9117690094132566,
+          "support": 19824.0
+        },
+        "1": {
+          "precision": 0.6459854014598541,
+          "recall": 0.37239035442628254,
+          "f1-score": 0.4724360948567909,
+          "support": 6179.0
+        },
+        "2": {
+          "precision": 0.8331449909104309,
+          "recall": 0.888080025138787,
+          "f1-score": 0.8597358480999823,
+          "support": 19094.0
+        },
+        "accuracy": 0.8415637403818436,
+        "macro avg": {
+          "precision": 0.7872240577091772,
+          "recall": 0.7344895884533552,
+          "f1-score": 0.7479803174566766,
+          "support": 45097.0
+        },
+        "weighted avg": {
+          "precision": 0.829215302875931,
+          "recall": 0.8415637403818436,
+          "f1-score": 0.8295427136250653,
+          "support": 45097.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          18694,
+          398,
+          732
+        ],
+        [
+          1214,
+          2301,
+          2664
+        ],
+        [
+          1274,
+          863,
+          16957
+        ]
+      ],
+      "roc_auc_ovr_macro": 0.9291145293790177,
+      "pr_auc_macro": 0.819499636561439
+    },
+    "status": "completed / directly comparable final baseline"
+  },
+  {
+    "experiment": "distilbert_smoke",
+    "dataset_size": {
+      "train": 900,
+      "validation": 450,
+      "test": 450
+    },
+    "features": "DistilBERT text tokens, max length 192",
+    "model": "DistilBERT classifier with weighted loss, 3 epochs, batch 8, grad accumulation 2, mixed precision",
+    "evaluation_split": "bounded held-out smoke sample",
+    "metrics": {
+      "accuracy": 0.6711111111111111,
+      "precision": 0.672346408919299,
+      "recall": 0.6711111111111111,
+      "f1": 0.6621405846362195,
+      "macro_precision": 0.672346408919299,
+      "macro_recall": 0.6711111111111112,
+      "macro_f1": 0.6621405846362194,
+      "weighted_precision": 0.672346408919299,
+      "weighted_recall": 0.6711111111111111,
+      "weighted_f1": 0.6621405846362195,
+      "per_class": {
+        "0": {
+          "precision": 0.7763975155279503,
+          "recall": 0.8333333333333334,
+          "f1-score": 0.8038585209003215,
+          "support": 150.0
+        },
+        "1": {
+          "precision": 0.6470588235294118,
+          "recall": 0.44,
+          "f1-score": 0.5238095238095238,
+          "support": 150.0
+        },
+        "2": {
+          "precision": 0.5935828877005348,
+          "recall": 0.74,
+          "f1-score": 0.658753709198813,
+          "support": 150.0
+        },
+        "accuracy": 0.6711111111111111,
+        "macro avg": {
+          "precision": 0.672346408919299,
+          "recall": 0.6711111111111112,
+          "f1-score": 0.6621405846362194,
+          "support": 450.0
+        },
+        "weighted avg": {
+          "precision": 0.672346408919299,
+          "recall": 0.6711111111111111,
+          "f1-score": 0.6621405846362195,
+          "support": 450.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          125,
+          14,
+          11
+        ],
+        [
+          19,
+          66,
+          65
+        ],
+        [
+          17,
+          22,
+          111
+        ]
+      ],
+      "roc_auc_ovr_macro": 0.8469851851851852,
+      "pr_auc_macro": 0.7406238913851331
+    },
+    "status": "completed smoke test / not directly comparable"
+  },
+  {
+    "experiment": "distilbert_6000",
+    "dataset_size": {
+      "train": 6000,
+      "validation": 3000,
+      "test": 3000
+    },
+    "features": "DistilBERT text tokens, max length 192",
+    "model": "DistilBERT classifier with weighted loss, 3 epochs, batch 8, grad accumulation 2, mixed precision",
+    "evaluation_split": "stratified bounded held-out samples",
+    "metrics": null,
+    "status": "running"
+  }
+]
